@@ -2,6 +2,8 @@ const mainContainer = document.querySelector('#content');
 const h1 = document.createElement('h1');
 
 function displayFirstPageLoad() {
+  document.body.style.backgroundImage = "url('../Images/chef-image-background.jpg')";
+
       const paragraph = document.createElement('p');
     h1.textContent = '@ Yottanet Restaurant, Your Needs Are Our Top Priority. Experience The Difference Tasty Lunch ';
     paragraph.textContent = `Here at Yottanet, Welcome. Our goal is to serve our patrons with excellent and nourishing meals.

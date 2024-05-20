@@ -88,8 +88,10 @@ tBeverageImageEl.classList.add('sBImage')
 let tBImage = document.createElement('img');
 
 function getMenu() {
-    mainContainer.textContent = '';
-    h1.textContent = 'Your Menu';
+   mainContainer.textContent = '';
+   document.body.style.backgroundImage = "url('../Images/chef-image-background.jpg')";
+   h1.textContent = 'Your Menu';
+    
 
 function getBreakFast() {
     breakFastTitleEl.textContent = 'BreakFast dishes'
@@ -264,14 +266,14 @@ getBreakFast();
     mainContainer.appendChild(sBeverageContainer);
 
     tBeverageText.textContent = ` `
-    tBImage.setAttribute('src', '../Images/chocolate-beverage.jpg');
+    tBImage.setAttribute('src', '../Images/red-ice-beverage.jpg');
     tBImage.setAttribute("height", "300");
     tBImage.setAttribute("width", "300");
 
     tBeverageImageEl.appendChild(tBImage);
-    tBeverageContainer.appendChild(teverageImageEl);
+    tBeverageContainer.appendChild(tBeverageImageEl);
     tBeverageContainer.appendChild(tBeverageText);
-    mainContainer.appendChild(tBeverageContainer);
+    mainContainer.appendChild(tBeverageContainer); 
    }
    getBeverage();
 
