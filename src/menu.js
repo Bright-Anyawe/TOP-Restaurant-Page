@@ -89,7 +89,7 @@ let tBImage = document.createElement('img');
 
 function getMenu() {
    mainContainer.textContent = '';
-   document.body.style.backgroundImage = "url('../Images/chef-image-background.jpg')";
+   document.body.style.backgroundImage = "url('../Images/sec-background-image.jpg')";
    h1.textContent = 'Your Menu';
     
 
