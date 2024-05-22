@@ -1,3 +1,235 @@
+@font-face {
+    font-family: "inter", "Roboto";
+    src: url("../assets/fonts/Inter/static/Inter-Bold.ttf");
+    src: url("../assets/fonts/Roboto/Roboto-Bold.ttf")
+}
+
 body {
-    background-image: url('/Images/Restaurant-waiter.jpg');
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter", "Roboto", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    background-color: rgba(206, 241, 230, .3);
+}
+
+.header-nav button {
+    background-color: transparent;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(206, 241, 230, .3);
+
+    margin: 0;
+    height: 538px;
+}
+
+/* p {
+    animation-duration: 3s;
+    animation-name: slidein;
+  } */
+
+
+.initial-headText {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    color: black;
+    font-weight: 900;
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 200%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.textparagraph {
+    display: flex;
+    align-items: center;
+    width: 700px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1.5px;
+    word-spacing: 1px;
+    color: black;
+}
+
+.menu {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.breakFastTitleEl {
+    margin: 0px 0px 0px 90px;
+    font-size: 25px;
+
+
+}
+
+.breakFastContainer {
+    display: flex;
+    gap: 50px;
+    text-align: center;
+
+}
+
+.fBFContainer {
+    margin-left: 90px;
+}
+
+.breakFastContainer img {
+    border-radius: 20px;
+}
+
+.fBreakFastText, .sBreakFastText, .tBreakFastText {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.lunchTitleEl {
+    margin: 0px 0px 0px 90px;
+    font-size: 25px;
+
+
+}
+
+.lunchContainer {
+    display: flex;
+    gap: 50px;
+    text-align: center;
+}
+
+.lunchContainer img {
+    border-radius: 20px;
+}
+
+.fLunchContainer {
+    margin-left: 90px;
+
+}
+
+.fLunchText, .sLunchText, .tLunchText {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.dessertTitleEl {
+    margin: 0px 0px 0px 90px;
+    font-size: 25px;
+
+
+}
+
+.dessertContainer {
+    display: flex;
+    gap: 50px;
+    text-align: center;
+}
+
+.dessertContainer img {
+    border-radius: 20px;
+}
+
+.fDessertContainer {
+    margin-left: 90px;
+
+}
+
+.fDessertText, .sDessertText, .tDessertText {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.beverageTitleEl {
+    margin: 0px 0px 0px 90px;
+    font-size: 25px;
+
+
+}
+
+.beverageContainer {
+    display: flex;
+    gap: 50px;
+    text-align: center;
+}
+
+.beverageContainer img {
+    border-radius: 20px;
+}
+
+.fBeverageContainer {
+    margin-left: 90px;
+
+}
+
+.fBeverageText, .sBeverageText, .tBeverageText {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+.storyTitle {
+    margin: 0;
+}
+
+.storyEl {
+    display: flex;
+    width: 800px;
+    flex-wrap: wrap;
+    
+
+}
+
+.sectionEl {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionText {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px
 }
