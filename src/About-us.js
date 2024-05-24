@@ -1,6 +1,8 @@
 import { mainContainer } from "./page-load.js"
 
 const aboutUsBtn = document.querySelector('.aboutUs');
+const ourText = document.createElement('div');
+ourText.classList.add('ourText')
 const hero = document.createElement('div');
 hero.classList.add('hero')
 const sectionEl = document.createElement('div');
@@ -14,10 +16,11 @@ let sectionH1 = document.createElement('h1');
 let sectionText = document.createElement('p');
 sectionText.classList.add('sectionText')
 let orderEl = document.createElement('a');
-orderEl.setAttribute('href', '#')
+orderEl.classList.add('orderEl')
+orderEl.setAttribute('href', 'https://www.google.com/search?q=pepper+restaurant+near+me&sca_esv=69d501c9217a3f8b&sca_upv=1&sxsrf=ADLYWIK91neInRO2ECGHECg5kzjV_aN9KQ%3A1716407585564&ei=IU1OZtGIIoDRhbIP5d6AcA&oq=pepper+res&gs_lp=Egxnd3Mtd2l6LXNlcnAiCnBlcHBlciByZXMqAggAMgUQABiABDIFEAAYgAQyCxAuGIAEGMcBGK8BMgUQABiABDIREC4YgAQYxwEYmAUYmQUYrwEyBRAAGIAEMgUQABiABDIUEC4YgAQYxwEYmAUYmQUYngUYrwEyFBAuGIAEGMcBGJgFGJkFGJ4FGK8BMgUQABiABEjXf1DbF1jAPXACeASQAQCYAaIIoAGGN6oBCzMtMS4xLjIuNS4xuAEDyAEA-AEBmAIPoAK2O8ICBBAAGEfCAgoQABiwAxjWBBhHwgIKECMYgAQYJxiKBcICBBAjGCfCAhEQLhiABBiRAhjRAxjHARiKBcICCxAAGIAEGJECGIoFwgIKEAAYgAQYQxiKBcICCBAAGIAEGLEDwgILEAAYgAQYsQMYgwHCAg4QLhiABBixAxiDARiKBcICDhAAGIAEGLEDGIMBGIoFwgILEC4YgAQYsQMYgwHCAhQQLhiABBiRAhixAxjRAxjHARiKBcICChAuGIAEGEMYigXCAhAQLhiABBjRAxhDGMcBGIoFwgIIEC4YgAQYsQPCAiMQLhiABBiRAhixAxjRAxjHARiKBRiXBRjcBBjeBBjgBNgBAcICDhAuGIAEGJECGLEDGIoFwgIFEC4YgATCAgsQLhiABBjRAxjHAcICHRAuGIAEGJECGLEDGIoFGJcFGNwEGN4EGN8E2AEBmAMAiAYBkAYIugYGCAEQARgUkgcNNS4zLTEuMi40LjIuMaAHs-YB&sclient=gws-wiz-serp&lqi=ChlwZXBwZXIgcmVzdGF1cmFudCBuZWFyIG1lIgOQAQFIif-mz5mvgIAIWicQABABGAAYARgCGAMiGXBlcHBlciByZXN0YXVyYW50IG5lYXIgbWWSAQpyZXN0YXVyYW50mgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVU40YUhSaVVuaDNSUkFCqgFZEAEqFSIRcGVwcGVyIHJlc3RhdXJhbnQoADIfEAEiG8JPC0C6VJoEhnLqgA73iTlSqKZAoZFCd_6PAzIdEAIiGXBlcHBlciByZXN0YXVyYW50IG5lYXIgbWU#rlimm=1836949964816750826')
 
 aboutUsBtn.addEventListener('click', function displayAboutUs() {
-    document.body.style.backgroundImage = "url('../Images/food-with-black-background.jpg')";
+    document.body.style.backgroundImage = "url('../Images/Bg-fork in each hand.jpg')";
     mainContainer.textContent = '';
 
     storyTitle.textContent = 'Our Story';
@@ -39,8 +42,9 @@ Forget about the daily stress and come dine with us. After tasting any of our me
     sectionEl.appendChild(sectionH1);
     sectionEl.appendChild(sectionText);
     sectionEl.appendChild(orderEl);
-    mainContainer.appendChild(hero);
-    mainContainer.appendChild(sectionEl);
+    ourText.appendChild(hero);
+    ourText.appendChild(sectionEl);
+    mainContainer.appendChild(ourText)
 }
 
 

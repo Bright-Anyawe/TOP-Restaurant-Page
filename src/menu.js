@@ -1,6 +1,9 @@
 import { mainContainer } from "./page-load.js"
 // let container = document.querySelector('#content')
+const headerNav = document.querySelector('.header-nav');
 let menu = document.querySelector('.menupage');
+const menuContent = document.createElement('div');
+menuContent.classList.add('menuContent');
 let h1 = document.createElement('h1');
 
 let breakFastTitleEl = document.createElement('h2');
@@ -100,14 +103,15 @@ let tBImage = document.createElement('img');
 
 function getMenu() {
    mainContainer.textContent = '';
-   document.body.style.backgroundImage = "url('../Images/sec-background-image.jpg')";
+   document.body.style.backgroundImage = "url('../Images/bg-light-brown.jpg')";
    document.body.style.backgroundSize = "100%"
 
    h1.textContent = 'Menu';
    h1.style.color = 'White';
    h1.classList.add('menu');
    mainContainer.style.color = 'white';
-   mainContainer.appendChild(h1);
+   menuContent.appendChild(h1);
+   mainContainer.appendChild(menuContent);
 
    function getBreakFast() {
       let breakFastContainer = document.createElement('div');
@@ -128,7 +132,8 @@ function getMenu() {
       fBFContainer.appendChild(fBreakFastImageEl);
       fBFContainer.appendChild(fBreakFastText)
 
-      mainContainer.appendChild(breakFastTitleEl);
+      menuContent.appendChild(breakFastTitleEl);
+      mainContainer.appendChild(menuContent);   
       breakFastContainer.appendChild(fBFContainer);
 
       sBreakFastText.textContent = `Individuals who consistently consume breakfast are often less likely
@@ -159,7 +164,8 @@ function getMenu() {
       tBFContainer.appendChild(tBreakFastImage);
       tBFContainer.appendChild(tBreakFastText)
       breakFastContainer.appendChild(tBFContainer);
-      mainContainer.appendChild(breakFastContainer);
+      menuContent.appendChild(breakFastContainer);
+      mainContainer.appendChild(menuContent);
 
    }
    getBreakFast();
@@ -180,7 +186,8 @@ function getMenu() {
       fLunchImageEl.appendChild(fLunchText)
       fLunchContainer.appendChild(fLunchImageEl);
 
-      mainContainer.appendChild(lunchTitleEl);
+      menuContent.appendChild(lunchTitleEl);
+mainContainer.appendChild(menuContent)
       lunchContainer.appendChild(fLunchContainer);
 
       sLunchText.textContent = `"People are the center of cooking.
@@ -197,6 +204,7 @@ function getMenu() {
       sLunchContainer.appendChild(sLunchText);
       lunchContainer.appendChild(sLunchContainer);
 
+
       tLunchText.textContent = `"Food is more than just a source of energy. 
     It's an encounter." – Guy Fieri. You won't regret visiting Yottanet;
      we're here to help. Come experience it for yourself.
@@ -209,7 +217,8 @@ function getMenu() {
       tLunchContainer.appendChild(tLunchImageEl);
       tLunchContainer.appendChild(tLunchText)
       lunchContainer.appendChild(tLunchContainer);
-      mainContainer.appendChild(lunchContainer);
+      menuContent.appendChild(lunchContainer);
+      mainContainer.appendChild(menuContent);
    }
    getLunch();
 
@@ -230,7 +239,8 @@ function getMenu() {
       fDessertImageEl.appendChild(fDessertText);
       fDessertContainer.appendChild(fDessertImageEl);
 
-      mainContainer.appendChild(dessertTitleEl);
+      menuContent.appendChild(dessertTitleEl);
+      mainContainer.appendChild(menuContent);
       dessertContainer.appendChild(fDessertContainer);
 
       sDessertText.textContent = `This is what happens when you try our sandwich,
@@ -257,7 +267,8 @@ function getMenu() {
       tDessertContainer.appendChild(tDessertImageEl);
       tDessertContainer.appendChild(tDessertText);
       dessertContainer.appendChild(tDessertContainer);
-      mainContainer.appendChild(dessertContainer);
+      menuContent.appendChild(dessertContainer);
+      mainContainer.appendChild(menuContent);
    }
    getDessert();
 
@@ -266,7 +277,7 @@ function getMenu() {
       beverageContainer.classList.add('beverageContainer');
       beverageTitleEl.textContent = 'Beverages';
       fBeverageText.textContent = `"Beer is proof that God loves us and wants us to be happy." - Benjamin Franklin
-      Come and have a time with and you will not regret coming to yottanet restaurant.
+      Come and have a time with us and you will never regret coming to Pepper-some restaurant.
       `;
 
       fBImage.setAttribute('src', '../Images/white-beverage.jpg');
@@ -277,11 +288,12 @@ function getMenu() {
       fBeverageImageEl.appendChild(fBeverageText);
       fBeverageContainer.appendChild(fBeverageImageEl);
 
-      mainContainer.appendChild(beverageTitleEl);
+      menuContent.appendChild(beverageTitleEl);
+      mainContainer.appendChild(menuContent);
       beverageContainer.appendChild(fBeverageContainer);
 
       sBeverageText.textContent = `"What whiskey will not cure, there is no cure for." - Irish Proverb
-@ yottanet restaurant we provide our client with healthy for their cure, don't sit there for your sickness to overwhelm you.
+@ Pepper-some restaurant we provide our client with healthy for their cure, don't sit there for your sickness to overwhelm you.
       `
       sBImage.setAttribute('src', '../Images/chocolate-beverage.jpg');
       sBImage.setAttribute("height", "300");
@@ -293,7 +305,7 @@ function getMenu() {
       beverageContainer.appendChild(sBeverageContainer);
 
       tBeverageText.textContent = ` "I drink to forget I drink." - Joe E. Lewis
-Come, yottanet has made arrangement for you to forget your all stressful days. We Dey For You
+Come, Pepper-some has made arrangement for you to forget your all stressful days. We Dey For You
       `
       tBImage.setAttribute('src', '../Images/red-ice-beverage.jpg');
       tBImage.setAttribute("height", "300");
@@ -303,10 +315,13 @@ Come, yottanet has made arrangement for you to forget your all stressful days. W
       tBeverageContainer.appendChild(tBeverageImageEl);
       tBeverageContainer.appendChild(tBeverageText);
       beverageContainer.appendChild(tBeverageContainer);
-      mainContainer.appendChild(beverageContainer);
+      menuContent.appendChild(beverageContainer);
+      mainContainer.appendChild(menuContent);
 
    }
    getBeverage();
+
+   headerNav.style.color = 'white';
 
 }
 menu.addEventListener('click', getMenu);
