@@ -12,16 +12,16 @@ const homePage = document.querySelector('.homepage');
 
 
 function displayFirstPageLoad() {
-  logoEl.textContent = "Pepper-Some Restaurant";
+  logoEl.textContent = "New Pepper's Restaurant";
   document.body.style.backgroundImage = "url('../Images/group-of-served-foods.jpg')";
   document.body.style.backgroundSize = "100%";
       mainContainer.textContent = '';
 
-    h1.textContent = `Your Needs Are Our Top Priority. Experience The Difference Tasty Lunch @ 'Pepper-Some' Restaurant, `;
+    h1.textContent = `Your Needs Are Our Top Priority. Experience The Difference Tasty Lunch @ 'New Pepper's' Restaurant, `;
     paragraph.textContent = `Here at 'Pepper-Some', Welcome. Our goal is to serve our patrons with excellent and nourishing meals.
 We specialize in exquisite cuisine that is made with love and inventiveness and is inspired
  by the amazing flavors of Yottanet. We're really proud of enhancing your favorite recipes
-  with nutritious ingredients. Come taste Yottanet cuisine prepared our way.`;
+  with nutritious ingredients. Come taste "New Pepper's" multi- cuisine prepared our way.`;
   
   textContainer.appendChild(h1);
   textContainer.appendChild(paragraph);
